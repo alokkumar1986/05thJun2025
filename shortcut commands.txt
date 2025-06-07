@@ -1,0 +1,29 @@
+Computer
+Interpretor
+Vs Code 
+
+1) What is the extension for python file?
+Ans : .py
+2) How to run a python file?
+Ans: Open terminal and type py/python filename and press enter key
+3) Few command
+cd : change directory 
+mkdir : create a folder
+dir : shows the content in a folder
+rm : remove/delete a folder
+
+Few shortcut command for VSCode: 
+ctrl+p  : To search a file in the folder
+ctrl+f  : To find some string in opened 	  file
+ctrl+s  : To save the file
+ctrl+/  : To comment/uncomment a line
+alt+uparrow : To move a line upward
+alt+downarrow : To move a line downward
+ctrl+c  : Copy
+ctrl+A  : select All
+window+v : show the clipboard
+
+
+
+
+
