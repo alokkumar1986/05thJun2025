@@ -1,0 +1,67 @@
+Standard Input and Output :
+===============================================
+
+print("Hello World")
+
+print() : It is a predefined function. It is a standard output function.
+
+We can get output a single variable, multiple variable, a single string or multiple string. 
+
+input() : It is also predefined function. It is a standard input function which means we can feed info to your program to process and give you output.
+
+#W A P Take your name as input and print "Hello, your name."
+
+#What is REPL?
+================================================
+
+REPL stands for Read, Eval, Print and Loop. It is generally speaking about python interactive shell.
+
+open cmd and type python press enter
+
+REPL acts as a calculator. It is not suitable for long program. It is only suitable for one liner programs.
+
+c/c++ :
+=========== 
+
+function sum(p, q){
+  return p+q
+}
+
+a = 15;b = 5;c = sum(a,b);
+printf('%d', c);
+
+
+python :
+
+{{}}, ;
+
+whitespace and indentation 
+
+def sum(p,q):
+ return p+q
+
+a = 10
+b = 5
+c = sum(a, b)
+
+
+
+standard input/ output
+REPL
+fundamental of Python :
+whitespaces & indentation
+identifiers
+comments
+
+
+
+
+
+
+
+
+
+
+
+
+
