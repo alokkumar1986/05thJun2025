@@ -1,0 +1,35 @@
+Find which are valid identifiers.
+
+1) true         //valid
+2) 99north
+3) can_we_do    //valid
+4) None         
+5) _yellow      //valid
+6) $$sam        
+7) sampl--      
+8) goto         //valid
+9) pass         
+10) for    
+
+How many keywords are there?
+
+33 
+
+Identifiers : : variables
+
+Variables are names of memory location. 
+
+a = 10
+print(a) // value at memory location a
+
+a = 20 
+w = a 
+print(w) // value at memory location w which is also pointing to 20
+print(a)  //
+
+So rules for defining identifiers is same for variables
+
+
+
+
+      
