@@ -39,7 +39,7 @@ print(a, b, c, sep=' - ')  #The values are : 10 - 20 - 30
 # 1 11 111 1111
 n = 5
 for i in range(1, n + 1):
-    print('1' * i, sep="-",  end=" ")  #Prints 1, 11, 111, 1111, 11111  
+    print('1' * i, sep=",",  end=" ")  #Prints 1, 11, 111, 1111, 11111  
     
 #form9 : print() with a string and multiple variable arguments with end and sep 
 print("The values are : ", end="")

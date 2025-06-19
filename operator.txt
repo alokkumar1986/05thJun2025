@@ -1,0 +1,33 @@
+statement : 
+
+Every line is a statement. 
+
+
+variable, keywords, function name, operators
+
+variable : 
+
+Keywords :
+
+operators : Operators are the symbol which operates on one or more operands and gives us a result.
+
+a, b = 10, 20
+
+c = a+b
+
+1) Assignment Operator
+2) Logical Operator
+3) Conditional Operator
+4) Bitwise Operator
+5) Membership Operator
+6) Arithmetic Operator
+7) Special Operator 
+8) Comparison Oparator
+
+Arithmetic Operator : +, -, *, /, %, //, **
+
+7/2 = 3.5
+7//2 = 3
+
+2*3  = 6
+2**3 = 8

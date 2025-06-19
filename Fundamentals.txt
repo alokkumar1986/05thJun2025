@@ -1,0 +1,162 @@
+Fundamentals :
+
+
+1) comments
+
+    singleline  #
+    multiline   '''/"""
+
+2) identifiers
+
+3) keywords 
+
+There are 33 keywords in python  / 35 keywords (async, await)
+
+True, False, None 
+and, or, not, is 
+if, elif, else
+while, for, break, continue, return, in, yield 
+try, except, finally, raise, assert
+import, from, as, class, def, pass, global, nonlocal, lambda, del, with 
+
+
+
+4) Statements
+
+5) Variables
+
+Rules for declaring a variable :
+
+* should contain a-zA-Z0-9_
+* Must not start with a digit
+* Can not use a keyword as variable
+* Length of the variable is not fixed
+
+Suggestion: variable name should be precise and meaningful
+
+Standard Input and Output in Python :
+
+input()
+print()
+
+Note : print() always displays result in a new line. For displays result in a single line we use end="" parameter
+       input() always takes string as input. For taking input a number, we use typecasting
+
+1) print("Aptech", end=" ")
+   print("learning")
+
+2) Pre-defined methods used 
+input() : takes input
+print() : displays result
+type()  : Gives the type of the variable
+id()    : Gives the memory Address of the variable
+len()   : Gives the number of characters in a string
+split() : Will split a string based on a symbol
+
+variable declaration :
+
+1) name = "Aptech"
+   num1 = 10
+
+2) Multiple variable declaration
+
+a = 10
+b = 20 
+c = 30
+
+a, b, c = 10, 20, 30
+
+a, b, c = 10, 1.25, "Aptech"
+
+a, b, c = 10, 20  #error ValueError: not enough values to unpack (expected 3, got 2)
+
+3) Dynamic typed variable declaration
+
+a = 10
+print(type(a))  # <class 'int'>
+
+a = "Aptech"
+print(type(a))  # <class 'str'>
+
+4) Assigning a same value to multiple variable
+
+a = 10
+b = 10
+c = 10
+
+a, b, c = 10, 10, 10
+
+a = b = c = 10
+
+
+#Write a program to swap two variable without using third variable.
+
+
+Type Casting :
+
+It is the way to change the datatype of a variable.
+
+1) Explicit (By force changing the datatype)
+2) Implicit (By automatically)
+
+Example :
+
+a = 10 
+print(type(a))
+a = "Aptech"
+print(type(a))
+
+implicit type casting
+
+Example :
+
+To use explicit type casting, we must use following methods
+int()
+float()
+str()
+double()
+
+a = "5"
+print(type(a))  #<class 'str'>
+a = int(a)
+print(type(a)   #<class 'int'>
+
+#Write a program to enter two numbers from keyboard and find its sum
+
+
+len() :
+
+s = "Aptech"
+print(len(s)) #6
+
+
+#Write a program to enter your name through keyboard and find the number of characters in it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
