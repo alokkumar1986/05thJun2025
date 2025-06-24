@@ -1,0 +1,89 @@
+Data Type : 
+
+In python or any other programming language, the value stored in a variable must have some type or The type of the value or data stored in the variable.
+
+
+1) Numeric datatype
+2) Sequence datatype
+3) Boolean datatype
+4) Map datatype
+5) Set datatype
+6) Byte datatype
+7) None Datatype
+
+Numeric Datatype :
+
+The data is always a number either a whole number or real number with fraction point and imaginary part.
+
+int : it is always a whole number with negative part. 
+
+float : It is always a real number with fraction point.
+
+complex : It has a real part and an imaginary part.
+
+
+
+Sequence Datatype : 
+
+A variable holds multiple data in a sequence manner. Data can be of multiple types. 
+
+string
+list
+tuple
+
+string : In python, anything written within a '' (single quote) or "" (double quote) is considered as string. 
+
+Sometime we also use ''' or """ for string.
+
+In python, there is no char datatype, hence any character enclosed with  a single / double quote will be a string
+
+a = 'c'
+print(type(a)) # <class 'str'>
+x = "Aptech Leaning"
+
+y = '''Hi, I am your assistant.
+How may I help you.
+Please type your message'''
+
+It is a sequence type. that means we can access each element using index.
+
+x = "Aptech Learning"
+
+print(x[-3])  #i
+
+
+
+Slicing : 
+
+var[start : end : step]
+
+x = "Aptech Learning"
+
+x[2:5] = 'tec'
+x[2:5:2]  = 'tc'
+x[:5]  =  "Aptec"
+x[2:]  ='tech Learning'
+
+x[2::2]  = 'tc erig'
+
+x[-5:-2]  = 'rni'
+x[:-2] = 'Aptech Learni'
+
+x[-2:] = 'ng'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

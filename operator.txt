@@ -22,7 +22,7 @@ c = a+b
 5) Membership Operator
 6) Arithmetic Operator
 7) Special Operator 
-8) Comparison Oparator
+8) Identity Operator
 
 Arithmetic Operator : +, -, *, /, %, //, **
 
@@ -66,11 +66,11 @@ print('#'*5)
    # # # #
   # # # # #
 
-print(' '*5,'#'*1)
-print(' '*4,'#'*2)
-print(' '*3,'#'*3)
-print(' '*2,'#'*4)
-print(' '*1,'#'*5)
+print(' '*5,'# '*1)
+print(' '*4,'# '*2)
+print(' '*3,'# '*3)
+print(' '*2,'# '*4)
+print(' '*1,'# '*5)
 
 
    # # # # #
@@ -81,6 +81,14 @@ print(' '*1,'#'*5)
      # # #
     # # # #
    # # # # #
+print(' '*1,'# '*5)
+print(' '*2,'# '*4)
+print(' '*3,'# '*3)
+print(' '*4,'# '*2)
+print(' '*4,'# '*2)
+print(' '*3,'# '*3)
+print(' '*2,'# '*4)
+print(' '*1,'# '*5)
 
 
         #
@@ -92,6 +100,17 @@ print(' '*1,'#'*5)
       # # #
        # #
         #
+
+print(' '*5,'# '*1)
+print(' '*4,'# '*2)
+print(' '*3,'# '*3)
+print(' '*2,'# '*4)
+print(' '*1,'# '*5)
+print(' '*2,'# '*4)
+print(' '*3,'# '*3)
+print(' '*4,'# '*2)
+print(' '*5,'# '*1)
+
 
     # # # # # #
     #         #
@@ -163,14 +182,14 @@ and : Both operand True,  Result : True
 
 or  : When atleast one operand is True, Result : True
 
-!  : !True, Result : False
-     !False, Result : True
+not  : not True, Result : False
+       not False, Result : True
 
 
 Most of numbers are True except 0
 '', "" is always False
 None is always False
-any string  is always True # ' ', " "
+any string  is always True # ' ', " " #Ture
 
 print(10 and 2) #2
 print(10 and 0) #0
@@ -206,10 +225,13 @@ print(~10)       #-11
 
 
 
-10 >> 2       0010 1000  = 40
+10 >> 2      0010 1000 =  40
+
 
 10 << 2       0000 0010  = 2
 
+5 >> 2       0001 0100  = 20
+5 << 2       = 1
 
 Membership Operators : 
 
@@ -242,6 +264,17 @@ b = 10
 print(a is b)
 
 
+
+Associativity and Precedence :
+
+10+2-3*4   = 10+2-12 = 12-12 = 0
+
+12-3**3-(3*5/2-7)  = 12 - 3**3-0.5
+                   = 12 - 27 -0.5
+                   = 12 - 27.5
+                   = -15.5
+
+    
 
 
 

@@ -1,5 +1,9 @@
 #Logical Operators
-
+'''
+and 
+or 
+not
+'''
 print(10 and 2) #True
 print(10 and 0) #False
 print('' and 10) #False
