@@ -71,6 +71,136 @@ x[:-2] = 'Aptech Learni'
 
 x[-2:] = 'ng'
 
+#Write a program to reverse a string using string slicing.
+
+s = "Aptech Learning"
+s1 = s[::-1]
+print(s1)
+
+
+# Find the output 
+
+s = "Aptech Learning"
+#s[5] = 't'   #Error
+s1 = s.replace("h", 't')  
+print(s1) #Aptect Learning
+
+#String is immutable 
+
+We can not change the content of string.
+
+
+ Some methods used in string 
+===============================
+1) len() : gives the length of the string
+2) lower() : It will convert string in lowercase
+3) upper() : uppercase
+4) capitalize() : Capitalize the string
+5) replace() : Replace part of string with another string
+6) strip() : It will remove whitespace from left and right of the string
+7) split() : It will split the string into multiple string and returns a list
+
+
+How to write a value in a string.
+=================================
+price = 100
+s = "The price is : "+price #Error
+print(s)
+
+string format :
+
+s = f"The price is : {price}"
+print(s)
+
+===============================
+item = "Rice"
+price = 50
+unit = 'Kg'
+
+s = "I bought 1kg of rice with 50 Rupees"
+s = f"I bought 1{unit} of {item} with {price} Rupees"
+
+print(s)
+
+=====================================================
+
+Escape Sequence :
+
+\b  : Backslash
+\n  : new line
+\r  : carriage return
+\t  : horizontal tab
+\"  : Double Quote
+\'  : single quote
+\/  : forward slash
+
+1)
+print("Aptech\tLearing") #Aptech Learning
+2) 
+print("Aptech\t\bLearning")  #AptechLearning
+3) 
+print("Aptech\nLearning")  #Aptech
+                           #Learning
+4) print("Aptech\r\bLearning") #Learning
+
+5) print('Sachin\'s Toy')
+
+6) print("Hello\rWorld\b\b") #Worl
+
+
+
+
+List datatype :
+
+List is sequence datatype. It holds multiple value of different types. The values are ordered, duplicate and mutable.
+
+How to define a list :
+
+1) li = [10, 'Car', 24.5, 10, 23]
+
+2) li = list((10, 'Car', 24.5, 10, 23))
+
+
+Since it is a sequence datatype. So values can be accessed using index.
+
+li = [10, 'Car', 24.5, 10, 23]
+
+print(li[1]) # Car
+print(li[6]) # list index out of range
+print(li[-7]) #  list index out of range
+
+
+list is mutable.
+=================
+
+li = [10, 'Car', 24.5, 10, 23]
+
+li[2] = 25
+
+print(li) # 10, Car, 25, 10, 23
+
+
+list can hold duplicate values :
+===============================
+
+list is ordered 
+================
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
 
 
 
