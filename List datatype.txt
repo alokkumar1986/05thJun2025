@@ -1,0 +1,166 @@
+List datatype :
+
+List is sequence datatype. It holds multiple value of different types. The values are ordered, duplicate and mutable.
+
+How to define a list :
+
+1) li = [10, 'Car', 24.5, 10, 23]
+
+2) li = list((10, 'Car', 24.5, 10, 23))
+
+
+Since it is a sequence datatype. So values can be accessed using index.
+
+li = [10, 'Car', 24.5, 10, 23]
+
+print(li[1]) # Car
+print(li[6]) # list index out of range
+print(li[-7]) #  list index out of range
+
+
+list is mutable / changeable
+===========================
+
+li = [10, 'Car', 24.5, 10, 23]
+
+li[2] = 25
+
+print(li) # [10, Car, 25, 10, 23]
+
+
+list can hold duplicate values :
+===============================
+
+list is ordered 
+================
+
+li[0] # 10
+li[1] # Car
+li[2] # 25
+
+List Methods :
+=========================
+1) len()  : to find the length of the list
+2) append(): to append/add a value to the list at the end
+3) insert() : to add a value at a particular index to the list
+4) remove() : to remove a value (first occurrence from left of the list) from the list 
+5) pop() : to remove a value from the list and return the value
+6) del : to delete a value from the list
+
+#len() : 
+
+l = [10, 'Car', 25, 10, 23]
+print(len(l)) #5
+
+#append() :
+
+l = [10, 'Car', 25, 10, 23]
+l.append(100)
+print(l)  # [10, 'Car', 25, 10, 23, 100]
+
+
+#insert()
+l = [10, 'Car', 25, 10, 23]
+l.insert(2, 45)
+print(l)  # [10, 'Car', 45, 25, 10, 23]
+
+
+#remove() :
+l = [10, 'Car', 25, 10, 23]
+l.remove(10)
+print(l)  # ['Car', 25, 10, 23]
+
+#pop() :
+l = [10, 'Car', 25, 10, 23]
+popedval = l.pop(2)
+print(popedval)  # 25
+print(l)  # [10, 'Car', 10, 23]
+
+#del :
+l = [10, 'Car', 25, 10, 23]
+del l[2]
+print(l)  # [10, 'Car', 10, 23]
+
+
+remove() vs del :
+
+l = [10, 'Car', 25, 10, 23]
+l.remove(10)
+l.remove('Car')
+l.remove(25)
+l.remove(23)
+print(l)  #[10]
+l.remove(10) 
+print(l)  #[]
+
+l = [10, 'Car', 25, 10, 23]
+del l[0]
+del l[1]
+del l[2]
+del l[3]
+del l[4]
+del l[5] #
+print(l) #
+
+
+#extend() : this method is used to add multiple elements to the end of a list.
+
+l = [10, 'Car', 25, 10, 23]
+l1 = [100, 200, 300]
+l.extend(l1)
+print(l)  # [10, 'Car', 25, 10, 23, 100, 200, 300]
+
+
+l = [10, 'Car', 25, 10, 23]
+l1 = [100, 200, 300]
+l = l+l1
+print(l) # [10, 'Car', 25, 10, 23, 100, 200, 300]
+
+#clear() : this method is used to remove all elements from a list.
+
+l = [10, 'Car', 25, 10, 23]
+l.clear()
+print(l)  # []
+
+
+Question :
+======================
+
+ l = ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
+
+ l.remove('o')
+ l.insert(4, 'o')
+ l.append(' ')
+ l.append('Aptech')
+ l.insert(7, ' ')
+ 
+ print(l)  #['H', 'e', 'l', 'l', 'o', ' ' , 'W', ' ', 'o', 'r', 'l', 'd', ' ', 'Aptech']
+
+
+
+  list slicing :
+======================
+
+  l = [10, 'Car', 25, 10, 23]
+
+  print(l[:5]) # [10, 'Car', 25, 10, 23]
+
+  print(l[1:]) # ['Car', 25, 10, 23]
+
+  print(l[::]) # [10, 'Car', 25, 10, 23]
+
+  print(l[::-1]) # [23, 10 , 25, 'Car', 10]
+
+  print(l[0:-5])  #[]
+
+
+
+
+
+
+
+
+
+
+
+

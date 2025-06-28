@@ -1,0 +1,80 @@
+tuple datatype :
+======================
+
+It is similar to list datatype.Except It is immutable.
+
+- Sequence datatype
+- Heterogeneous 
+- Ordered 
+- Duplicated
+- immutable
+
+How to define a tuple : 
+
+1) t = (10, 'Car', 25, 10, 23)
+
+2) t = tuple((10, 'Car', 25, 10, 23))
+
+3) l = [10, 'Car', 25, 10, 23]
+   t = tuple(l)
+
+Accessing values using index :
+
+t = (10, 'Car', 25, 10, 23)
+print(t[0])  # 10
+print(t[1])  # 'Car'
+print(t[2])  # 25
+print(t[5])  # Error tuple index out of range 
+
+
+print(t[-1])  #23
+print(t[-5])  #10
+print(t[-6])  # Error tuple index out of range
+
+Methods in tuple : 
+
+t = (10, 'Car', 25, 10, 23)
+t[2] = 30 # Error
+print(t)  
+
+Due to tuple is immutable, we can not change the value. So there are not any method like list.
+Once a tuple is defined, we can not change its value. 
+
+
+del t
+It will delete the tuple from memory
+
+
+l = []
+l2 = []
+l = l+l2
+
+t = tuple(l)
+
+
+tuple slicing :
+======================= 
+
+t = (10, 'Car', 25, 10, 23)
+
+print(t[::-1]) # (23, 10, 25, 'Car', 10)
+
+print(t[:5]) # (10, 'Car', 25, 10, 23)
+
+print(t[1:]) # ('Car', 25, 10, 23)
+
+print(t[::]) # (10, 'Car', 25, 10, 23)
+
+print(t[::-1]) # (23, 10 , 25, 'Car', 10)
+
+print(t[0:-5])  #()
+
+
+
+
+
+
+
+
+
+

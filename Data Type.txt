@@ -150,41 +150,6 @@ print("Aptech\nLearning")  #Aptech
 
 
 
-List datatype :
-
-List is sequence datatype. It holds multiple value of different types. The values are ordered, duplicate and mutable.
-
-How to define a list :
-
-1) li = [10, 'Car', 24.5, 10, 23]
-
-2) li = list((10, 'Car', 24.5, 10, 23))
-
-
-Since it is a sequence datatype. So values can be accessed using index.
-
-li = [10, 'Car', 24.5, 10, 23]
-
-print(li[1]) # Car
-print(li[6]) # list index out of range
-print(li[-7]) #  list index out of range
-
-
-list is mutable.
-=================
-
-li = [10, 'Car', 24.5, 10, 23]
-
-li[2] = 25
-
-print(li) # 10, Car, 25, 10, 23
-
-
-list can hold duplicate values :
-===============================
-
-list is ordered 
-================
 
 
 
