@@ -1,0 +1,25 @@
+1) What is difference between tuple and list ?
+
+list :  It is mutable.
+        We use [], list() to define a list.
+        It has several built-in methods to manipulate a list.
+        append(), insert(), remove(), pop()
+
+
+tuple : It is immutable.
+        we use (), tuple() to define a tuple.
+        It has no such methods to manipulate a tuple. To manipulate         a tuple, we must use list and list methods.
+
+
+2) What are the similarities between list and tuple ?
+
+Both are ordered, indexed and can contain duplicate. Both are sequence data type.
+
+3) Python is called Dynamic Typed language.
+
+Why python is called a Dynamic Typed language?
+
+In python, there is type concept i.e. we have datatype in python.
+But we don't use data type explicitly while declaring a variable. It is automatically assigned when we assign a value to the variable. Hence python is called dynamic typed language.
+
+

@@ -1,0 +1,157 @@
+1)  A variable holds a single value.
+
+Numeric : 
+Boolean :
+None :
+
+2) A variable holds multiple type of multiple values. 
+Collection Datatype
+
+Sequence :
+Set : 
+Map :
+Bytes & BytesArray :
+
+==============================================================
+
+Set : It is a collection datatype which holds multiple type of multiple values.
+
+It is unordered, unindexed and don't contain duplicate. 
+
+How to define a set :
+
+1) {}
+
+2) set()
+
+s = {10, 'Car', 23.5, 25, 10}
+
+s1 = set((10, 'Car', 23.5, 25, 10))
+
+print(type(s))   # <class 'set'>
+print(type(s1))  # <class 'set'>
+===========================================
+Set is unordered :
+
+s = {10, 'Car', 23.5, 25, 10}
+
+print(s)  # {10, 'Car', 23.5, 25, 10}
+print(s)  # {23.5, 10, 'Car', 25, 10}
+
+Every time we try to print the value of a set and it gives value in different order. Hence it is unordered.
+
+===========================================
+
+Set is unindexed :
+
+It means we can not access the values using index.  Hence it is unindexed.
+
+s = {10, 'Car', 23.5, 25, 10}
+
+print(s[0]) # TypeError: 'set' object is not subscriptable
+
+we can access/print the values of a set using loop. 
+
+for item in s: 
+   print(item)  
+
+====================================================
+
+Set don't contain duplicate :
+
+===========================================
+
+Set is mutable : 
+
+We can add/ remove values from a set.
+
+Set has following built-in methods
+
+add() : We can add values to a set. Single value at a time
+update() : We can update values in a set. Multiple value can be added to a set.
+remove() : We can remove values from the set
+discard() : We can remove values from the set
+pop() : We can remove values from the set and return that value
+clear() : We can clear values from the set
+del : We can delete a set
+
+s = set((10, 'Car', 23.5, 25, 10))
+
+print(s)
+
+s.add(30)
+
+print(s)
+
+#s.add(['Bike', 40])  # This will raise a TypeError because lists are unhashable
+
+s.update(['Bike', 40]) 
+
+print(s)
+
+s.remove(10)
+
+print(s)
+
+pop_item = s.pop()
+
+print("Popped item:", pop_item)
+print(s)
+
+#=================================
+
+s.clear()
+print(s)
+
+#=================================
+s = set((10, 'Car', 23.5, 25, 10))
+s.discard('Car')
+print(s)
+
+#==================================
+del s
+print(s)  # NameError: name 's' is not defined
+
+
+#How to join two set 
+
+union() : two set will be joined to form a new set and contain all values from the two set.
+intersection() : It will return set having common values in the two sets.
+difference() : It will return the values from 1st set which are not present in 2nd set.
+symmetric_difference() : It will return the values from 1st set and 2nd set except duplicate values
+
+
+Frozen Set : 
+
+It is same as set except it is immutable.
+
+It is the readonly form of a set. 
+
+s = frozenset((10, 'Car', 23.5, 25, 10))
+
+
+
+# Difference between a list and a set.
+# Similarities between list and set.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
