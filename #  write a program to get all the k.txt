@@ -1,0 +1,91 @@
+#  write a program to get all the keywords in python.
+
+import keywords
+
+l = keywords.kwlist
+
+for item in l:
+  print(item, end= " ")
+
+98 / 2 = 49   0
+49 / 2 = 24   1
+24 / 2 = 12   0
+12 / 2 = 6    0
+6 / 2  = 3    0
+3  / 2 = 1    1
+1  / 2 = 0    1
+
+0b1100010
+
+0*2**0  = 0
+1*2**1  = 2
+1*2**5 = 32
+1*2**6 = 64
+       = 98
+
+binary to octal        = oct()
+binary to hexadecimal  = hex()
+octal to binary        = bin()
+octal to hexadecimal   = hex()
+hexadecimal to binary  = bin()
+hexadecimal to octal   = oct()
+
+binary = 0, 1  = base 2   = 0b / 0B
+octal = 0.... 7 = base 8  = 0o / 0O
+hexadecimal = 0 ...9 A B C D E F = base 16 = 0x / 0X
+decimal  = 0... 9 = base 10  = 
+
+
+1.2e3  = 1.2 * 10**3
+       = 1.2 * 1000
+       = 1200.0
+
+3.45e5 = 345000
+1.234E4 = 12340
+
+1234567890000  = 123456789e4 = 1.23456789e12
+
+x = 2+3j
+y = 3+2j
+
+x+y = 5+5j
+x-y = -1+j
+x*y = 2(3+2j)+3j(3+2j)
+    = 6+4j+9j-6
+    = 0+13j
+
+x/y = 2/(3+2j)+3j/(3+2j)
+
+x // y = error (floor division is not allowed in complex number)
+
+
+########## 
+  karthi 
+##########
+
+print('#'*10)
+print('' *(10-len('karthi'))//2)
+print('karthi')
+print('#'*10)
+
+
+print(bool(''))  # False
+print(bool(None)) # False
+print(bool(' ')) # True
+
+dictionary
+None
+Boolean
+Bytes and ByteArray
+=============================================
+datatype (collection datatype)
+Control flow statement
+Exception handling
+Oops
+
+
+
+
+
+
+

@@ -1,0 +1,199 @@
+Dictionaries : 
+
+It is a collection datatype where items are stored in key and value pair. 
+
+d = {
+  key1:value1, key2:value2,...
+}
+
+It is ordered, changeable/mutable and contain duplicate.
+
+How to define a dictionary :
+============================
+
+1) d = { 'name' : 'ABC', 'age': 23, 'course' : 'Python' }
+
+2) d = dict(name='ABC', age=23, course= 'Python') 
+
+
+How to access the values : 
+============================
+d = { 'name' : 'ABC', 'age': 23, 'course' : 'Python' }
+
+
+keys() : It will return all the keys
+values() : It will return all the values
+items() : It will return each key and value as a tuple.
+
+print(d.keys()) # [name, age, course]
+print(d.values()) # ['ABC', 23, 'Python']
+print(d.items()) # [(name, 'ABC'), (age, 23), (course, 'Python')]
+
+
+We can access a value using key :
+
+print(d['name'])  = 'ABC'
+print(d['age']) =23
+print(d['course'] = 'Python'
+
+for i in d.keys(): 
+   print(i) 
+
+#'name'
+#'age'
+#'course'
+
+for j in d.values():
+   print(j) 
+
+# 'ABC'
+# 23
+# 'Python'
+
+for (x,y) in d.items():
+   print('Key :', x, 'Value :', y)
+
+Key : name Value : 'ABC'
+Key : age  Value : 23 
+Key : course Value : 'Python'
+
+
+
+==================================================
+
+d = {
+    'name' : 'Aptech',
+    'location' : 'Nayapalli',
+    'course' : ['Python', 'Django', 'MySQL', 'Angular', 'React', 'Node']
+    }
+
+print(d['course']) # ['Python', 'Django', 'MySQL', 'Angular', 'React', 'Node']
+
+print(d[course][1])  # 'Django'
+
+==================================================
+
+
+student = {
+   'name' : 'ABC',
+   'roll' : 120202501,
+   'marks' : {
+               'math' : 95,
+               'scl' : 67,
+               'sle' : 87,
+               'flo' : 78
+             }
+}
+
+How to find the mark secured in SLE ?
+
+print(student['marks']) #  { 'math' : 95,'scl' : 67,'sle' : 87, 'flo' : 78 }
+
+print(student['marks']['sle']) # 87
+ 
+=================================================
+* dictionary is ordered.
+
+Because we are able to access values using key.
+
+* dictionary is changeable/mutable.
+
+d = { 'name' : 'ABC', 'age': 23, 'course' : 'Python' }
+
+d['name'] = 'PQR'
+
+print(d)  #{ 'name' : 'PQR', 'age': 23, 'course' : 'Python' }
+
+* dictionary holds duplicate values not duplicate key
+
+d = { 'name' : 'ABC', 'age': 23, 'course' : 'Python', 'firstname' : 'ABC' }
+
+print(d) # { 'name' : 'ABC', 'age': 23, 'course' : 'Python', 'firstname' : 'ABC' }
+
+
+d1 = { 'name' : 'ABC', 'age': 23, 'course' : 'Python' , 'name' : 'ABC' }  # duplicate key won't be considered
+
+print(d1) #{ 'name' : 'ABC', 'age': 23, 'course' : 'Python'  }
+
+
+Methods used in dictionary :
+===============================
+
+len() : It is used find the number key, value pairs in a dictionary.
+update() : It is used to change a value and also add a new key, value pair.
+pop() : It is used to remove a value using key.
+popitem() : It is used to remove a key, value pair
+del : It is used to delete a value using key
+clear() : It is used to empty a dictionary
+
+============================================================
+d = { 'name' : 'ABC', 'age': 23, 'course' : 'Python' }
+print(len(d)) # 3
+
+
+==================================================
+
+student = {
+   'name' : 'ABC',
+   'roll' : 120202501,
+   'marks' : {
+               'math' : 95,
+               'scl' : 67,
+               'sle' : 87,
+               'flo' : 78
+             }
+}
+
+How to update the SLE mark to 78
+
+student['marks']['sle'] = 78
+
+student[marks].update({'sle': 78})
+
+student.update({ 'marks' : { 'sle' : 78}})
+
+
+Boolean Datatype :
+
+It is a special datatype which has only two value i.e True & False
+
+Most of the values of int are True except 0
+
+Most of the string are True except '' or ""
+
+None is always False
+
+
+print(100 > 20) #True
+
+print(int(True)) #1
+
+print(100 and 2) #2    
+print(100 or 2) #100
+
+======================================
+Exception handling
+None Datatype
+Bytes and ByteArray
+Control Flow Statement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
