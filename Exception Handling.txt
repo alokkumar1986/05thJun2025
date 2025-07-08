@@ -1,0 +1,222 @@
+Exception Handling :
+
+l = [10, 20, 30, 35, 43, 54]
+print(l[7])
+print(l)
+print(l[3]) 
+
+
+#Output :
+
+IndexError : List Index out of range  
+=======================================================
+
+error / exception : When we encounter any error in python program knowingly or unknowingly, the program stops there and doesn't execute further. But we want the execution to be continued. To handle such situation, we use exception handling.
+
+Exception is handled by following keywords :
+
+try 
+except 
+else 
+finally
+
+
+try block : This block of code contain the lines of code where we get error/exception.
+
+except block : This block of code will handle the error/exception if there is any.
+
+else block : This block of code will execute if there is not any error / exception. This is an optional block.
+
+finally block : This is also an optional block. This block executes every time either there is error/exception or not.
+
+
+l = [10, 20, 30, 35, 43, 54]
+try : 
+ print(l[7])
+except: 
+ print('Accessing element at 7th index is out of reach.')
+print(l)
+print(l[3]) 
+
+#Accessing element at 7th Index is out of reach
+#[10, 20, 30, 35, 43, 54]
+#35
+
+
+except block with Error Name : 
+
+In a try block, we can have multiple except block. But the except block having right error name will be executed. If the right error name is not present, then except block without any error name will be executed.
+
+example : 1
+
+l = [10, 20, 30, 35, 43, 54]
+try:
+    print(l[7]) 
+except NameError:
+    print("Element not found") 
+except IndexError:
+     print("Accessing element at 7th index is out of range")
+except :
+    print("An unexpected error occurred")
+print(l)
+print(l[3])
+
+In this example, the except block having IndexError will be executed since the try block throws Indexerror : list index out of range.
+=============================================================
+example : 2
+
+l = [10, 20, 30, 35, 43, 54]
+try:
+    print(l[7]) 
+except NameError:
+    print("Element not found") 
+except :
+    print("An unexpected error occurred")
+except IndexError:
+    print("Accessing element at 7th index is out of range")
+print(l)
+print(l[3])
+
+In this example, we will get error, because except without Error should be the last except block of a try.
+
+==============================================================
+
+else block : It is an optional block
+
+
+try :
+ print(a)
+except:
+ print('a is not defined')
+else:
+ b = a
+ print(b)
+
+#Ouput : a is not defined
+
+Here else block will not execute because we have an error. Rather except part will be executed.
+
+a = 10
+try :
+ print(a)
+except:
+ print('a is not defined')
+else:
+ b = a
+ print(b)
+
+#Output : 10 
+          10
+
+Here except part will not execute because there is no error. rather else part will be executed.
+
+Q : Can a try block have multiple else block?
+
+Ans : No.
+
+
+==========================================================
+
+finally block :
+
+This is an optional block but it is executed whether there is error or not
+
+1)
+try :
+ print(a)
+except:
+ print('a is not defined')
+else:
+ b = a
+ print(b)
+finally:
+ print('End of Program')
+
+#output : a is not defined
+          End of the program
+
+
+2) 
+a = 10
+try :
+ print(a)
+except:
+ print('a is not defined')
+else:
+ b = a
+ print(b)
+finally:
+ print('End of Program')
+
+#output : 10
+          10
+          End of the program
+
+
+#write a program to find the division of two numbers. The numbers should be entered by the programmer during execution.
+
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+try: 
+  div = num1 / num2
+except ZeroDivisionError:
+  print("Second number can not be zero")
+else: 
+  print(f"The division of {num1} by {num2} is {div}")
+
+
+
+What will be the output ?
+
+print("2 + 1 =", 2+1)
+
+
+a) "2 + 1"=3
+b) 2 + 1 = 3
+3) 3
+4) Error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

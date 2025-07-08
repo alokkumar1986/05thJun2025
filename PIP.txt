@@ -1,0 +1,26 @@
+PIP : 
+
+PIP stands for 'Package Installer for Python'.
+
+
+It comes automatically when we installed python in our system.
+
+using pip we can install / uninstall any built-in packages in our system.
+
+There are huge numbers of packages available for python.
+
+Package : It is a folder containing various python files. Each python file may contain one or more methods / functions. These files are called modules. In the package directory, there must be a __init__.py file. This __init__.py must contain the description/ definition / declaration various modules available in that packages.
+
+Module : It is a python file with functions/ objects.
+
+Module as an alias. 
+
+
+More discussion about module and packages ::
+
+
+
+
+
+
+
