@@ -1,0 +1,13 @@
+Control Flow :
+
+In python control of program execution is always from top to bottom and execute line by line.
+
+But in some cases, we have to shift our control from one place to other. In that cases we use control flow statements.
+
+There are three types of control flow statement.
+
+1) conditional (if, if else, if elif else)
+2) transfer  (continue, break, pass)
+3) iterative (for, while)
+
+ 

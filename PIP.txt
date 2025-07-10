@@ -16,7 +16,113 @@ Module : It is a python file with functions/ objects.
 Module as an alias. 
 
 
-More discussion about module and packages ::
+how to add a module :
+
+import moduleName 
+
+#whole module is imported
+
+import moduleName as aliasName 
+
+# whole module is imported
+
+from moduleName import function/methodName as function/methodaliasName  
+
+#specifically import a single function from a module 
+
+
+
+
+
+add.py 
+=================
+def add(x, y):
+  return x+y
+
+def substract(x,y):
+  return x-y
+
+
+cal.py (import a module)
+=================
+import add as a
+
+print("Addition of 10 & 20 : " , a.add(10,20))
+print("Substarction of 10 & 20 : " , a.substarct(10,20))
+
+cal1.py (import function from a module)
+=========================
+from add import add as a, substarct as s
+
+print("Addition of 10 & 20 : " , a(10,20))
+print("Substarction of 10 & 20 : " , s(10,20))
+
+
+add is a module created by us. random is a built-in module.
+built-in modules are available in build-in packages. 
+
+pip install packageName
+pip uninstall packageName
+
+pip list / pip freeze 
+
+#list of packages installed in the system
+
+pip search packageName
+
+Q) If all the packages are installed in my system, what will happen?
+
+All the packages will be available all the projects in the system. Project size will increase. Performance may hamper.
+
+To handle such situation, we use virtual environment. 
+
+1)How to create a virtual environment :
+
+py -m venv env1 
+
+#env1 : Name of the virtual environment
+
+2) How to activate virtual environment
+
+activate.bat
+
+============================================
+
+How to create a package ?
+
+
+step 1 : create a folder (calculate)
+step 2 : create __init__.py inside calculate folder
+step 3 : create module inside calculate folder
+
+   add1.py  
+   substract1.py  
+
+step 4 : list the module in __init__.py file
+
+from .add1 import add
+from .substract1 import substract
+
+
+Now we can use this calculate package in any program
+
+53.py
+===========
+
+from calculate import add
+
+print("Addition of 10 and 20 :" add(10,20))
+
+
+
+
+
+
+
+
+
+
+
 
 
 
