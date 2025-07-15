@@ -1,0 +1,13 @@
+Virtual Environment : 
+
+It is a virtual system which is not dependent on the actual system and packages installed in the actual system.
+
+What is the advantage of creating a virtual environment?
+
+Generally we are working in a project in the actual environment, then all the packages will be accessible to the project. 
+
+While deploying the project, all the packages will be bundled and size of the build file will be more. So the performance will be less.
+
+To overcome or minimize the bundle size or maximize the performance, we create a virtual environment and install the packages required for the project. And finally build the project.
+
+** Django : virtual environment 

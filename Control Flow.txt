@@ -9,5 +9,96 @@ There are three types of control flow statement.
 1) conditional (if, if else, if elif else)
 2) transfer  (continue, break, pass)
 3) iterative (for, while)
-
  
+conditional statement : 
+
+When we have a condition and based the value of the condition, control flow will execute some lines of code or not.
+
+
+if statement : 
+
+The if statement always has a condition. Based on the condition, some lines of code inside the block will execute or not.
+
+syntax :
+
+if condition:
+   statement1
+   statement2
+   ..
+   ..
+   
+
+when condition is TRUE, then statement1, statement2 and … (the lines of code inside if block) will be executed.
+
+when condition is FALSE, then control flow will skip the lines of code inside if block.
+
+
+Example : 
+
+name = input("Enter student name : ")
+if name == 'Ram':
+   print('Name is :' , name)
+   print("He is a python student")
+   print("He scores good in python")
+print("End of the program")
+
+Every if block must have some / one line(s) of code inside it. If not, it will be error.
+
+What is the output of the following ?
+
+1) if 1:
+     print("1")   # 1
+
+2) if 1 is 1.0 :
+     print('1 is 1.0')  # 
+
+3) if None:
+     print('None')  # 
+
+4) if '':
+     print('No output') # 
+
+
+#Write a program to enter any number and print "even" if it even.
+=====================================================================
+
+if else statement : 
+
+In this statement, we have a condition and based on condition if block (the lines of code inside if block) or else block (the lines of inside else block) will be executed.
+
+
+if condition :
+   statement1
+   statement2
+   …
+   …
+else :
+   statement 10
+   statement 11
+   ….
+   ….
+
+when condition : TRUE,
+       statement1, statement2 , … will execute (ie. if block will execute)
+       statement10, statement11, … will be skipped (i.e else block will skip)
+when condition : FALSE,
+       statement1, statement2 , … will be skipped  (ie. if block will skip)
+       statement10, statement11, … will be executed (i.e else block will execute)
+
+    
+
+Example : 
+
+name = input("Enter student name : ")
+if name == 'Ram':
+   print('Name is :' , name)
+   print("He is a python student")
+   print("He scores good in python")
+else:
+   print('There is no student named : ", name)
+print("End of the program")
+
+
+
+
+

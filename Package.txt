@@ -1,0 +1,33 @@
+Package : 
+
+It is folder containing all the module files and a __init__.py file.
+
+module : 
+
+Any python file containing functions/methods and objects
+
+example : module1.py
+
+def greetings(name):
+  return f'Hello {name}!'
+
+
+person = {
+    "name": "Alice",
+    "age": 30,
+    "city": "Wonderland"
+}
+================================
+
+package : calculate
+
+          __init__.py
+          add.py
+          substract.py
+
+
+
+
+
+
+
