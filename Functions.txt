@@ -1,0 +1,19 @@
+Functions
+
+lambda
+
+map
+
+filter
+
+recursion
+
+File handling 
+
+oops
+
+library :  numpy, pandas & matplotlib
+
+
+
+
