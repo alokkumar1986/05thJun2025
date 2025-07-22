@@ -257,8 +257,7 @@ while True:
 
 Pass statement in loop :
 
-Pass statement is often used inside for/while loop.  When the for block / while block is empty, then we get syntax error. Which means for block/ while block always expects some lines of code inside it. So to make it error free, we
-write a pass statement for the empty for / while block.
+Pass statement is often used inside for/while loop.  When the for block / while block is empty, then we get syntax error. Which means for block/ while block always expects some lines of code inside it. So to make it error free, we write a pass statement for the empty for / while block.
 
 example :
 
@@ -291,7 +290,7 @@ else :
 
 When expression is True, statement1, statement2, ... will repeatedly execute.
 
-But when express is False, statement11 will execute only once.
+But when expression is False, statement11 will execute only once.
 
 
 example :

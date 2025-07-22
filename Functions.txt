@@ -14,6 +14,250 @@ oops
 
 library :  numpy, pandas & matplotlib
 
+#=======================================================================
+
+function : 
+
+In python function is a named block. Inside the block we have some lines of code. These lines are executed when we call the function.
+
+
+
+if condition:
+  statement1
+  statement2
+  ….
+
+
+for i in sequence:
+  statement1
+  statement2
+  ….
+
+
+while expression:
+  statement1
+  statement2
+  ….
+
+
+syntax :
+
+
+def functionName() :
+  statement1
+  statement2
+  ….
+
+def is a keyword which tells that we are defining a function.
+
+functioName() : It is a user defined name with a parenthesis.
+
+
+Example : 
+
+def greetings():  #function definition
+  print('Hello World')
+
+greetings()   #function call
+
+
+Note :
+
+1) If we have function definition, but no function call
+  we will get no output or no error
+
+2) If we have function call, but no function definition
+  we will get error.
+
+===========================================================================
+
+
+greetings()   #function call
+
+def greetings():  #function definition
+  print('Hello World')
+
+Output : Error
+
+
+Note : function definition should be in the top of the program before calling it. 
+
+#========================================================
+function parameter & arguments :
+
+A function may or may not have parameters / arguments.
+
+example :
+
+def greetings(name):
+  print('Hello ', name)
+
+greetings('Aptech')
+
+
+example :
+
+def greetings(name):
+  print('Hello ', name)
+
+p = 'Aptech'
+greetings(p)
+
+
+
+Here 'Aptech' or p is argument whereas name is parameter. 
+
+
+Argument is always passed in function call and parameter in function definition.
+
+
+Arguments can be a value/variable.
+
+Parameters are always variables.
+
+Note: 
+
+The number of argument in function call must be same no of parameter in function definition.
+
+
+example :
+
+def greetings(name):
+   print('Hello ', name)
+
+greetings("Aptech", 'Learning')  
+
+output : error
+
+
+example :
+  
+def greetings(name, name1):
+   print('Hello ', name, name1)
+
+greetings("Aptech") 
+
+Output : Error
+
+
+example :
+  
+def greetings(name, name1):
+   print('Hello ', name, name1)
+
+greetings("Aptech", "Learning") 
+
+Output : Hello Aptech Learning
+
+
+Note : The arguments in function call is assigned to the parameters in function definition as per their order.
+
+i.e: Aptech will be assigned to name  
+     Learning will be assigned to name1
+
+#===============================================================
+return statement :
+
+A function may or may not return a value. When it return a value, we use return statement in it.
+
+example :
+
+def findSum(a,b) :
+  print('Sum is : ', a+b)
+
+findSum(10,20)
+
+#-----------------------------
+example :
+
+def findSum(a,b) :
+  return a+b
+
+sum = findSum(10,20)
+print('Sum is : ', sum)
+
+
+In above example1 is not returning anything whereas example2 is returning a+b and the same is assigned to sum.
+
+Note :
+When a function returns, it must be assigned to a variable while calling the function.
+
+A function always returns a single value.
+
+#-----------------------------------------------------------------
+
+#write a program to find sum of 100 and 125, 215 and 319, 101 and 202 
+
+num1 = 100
+num2 = 125
+
+num3 = 215
+num4 = 319
+
+num5 = 101
+num6 = 202
+
+print('Sum :' , num1+num2)
+print('Sum :', num3+num4)
+print('Sum :', num5+num6)
+
+#=============================
+
+def findSum(n, n1):
+  print('Sum :', n+n1)
+
+findSum(100, 125)
+findSum(215, 319)
+findSum(101, 202)
+
+Function helps in code reusability. It enforce to write less code.
+
+
+# default parameter
+# function recursion
+# lambda function
+# file handling
+# quizes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
