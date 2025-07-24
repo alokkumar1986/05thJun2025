@@ -1,0 +1,297 @@
+Types of function arguments : 
+
+1) Default argument/parameter
+2) Positional argument
+3) Keyword argument
+4) Arbitrary argument
+
+
+Default Argument : 
+
+Lets see an example :
+
+def showMesage(name, message):
+   print('Hi ', name, message)
+
+showMessage('Aptech') 
+
+
+# Output : Error 
+
+def showMesage(name, message='Welcome'):
+   print('Hi ', name, message)
+
+showMessage('Aptech') 
+
+# Output : Hi Aptech Welcome
+
+
+In the example 1, we have error because the no. of argument is not matching to  the no of parameters.
+
+But in the example2, we will have an output without any error. Here message parameter is having a default value. Hence if we don't pass a value for the parameter it takes the default value and gives output without error. This is called default parameter. 
+
+
+def showMesage(name, message='Welcome'):
+   print('Hi ', name, message)
+
+showMessage('Aptech', 'How are you?')
+
+#output : Hi Aptech How are you? 
+
+If we pass the value for message parameter from function call, it will override the default value and give output as per the value passed from function call.
+
+
+def showMesage(name="Aptech", message):
+   print('Hi ', name, message)
+
+showMessage('How are you?')
+
+#output : Error 
+
+Note : The default value always assigned to the parameter from right to left in function definition. 
+
+But in the above example, we have assigned a default value to the left parameter, hence error.
+
+1)
+def showMesage(name="Aptech", message=''):
+   print('Hi ', name, message)
+
+showMessage('How are you?')
+
+#Outout : Hi How are you?
+
+2)
+
+def showMesage(name="Aptech", message=''):
+   print('Hi ', name, message)
+
+showMessage('How are you?', 'Welcome')
+
+#Outout : Hi How are you? Welcome
+
+
+3) def showMessage(name, message, option=""):
+  print('Hi ', name, message, option)
+
+showMessage("Aptech")
+
+#Output : Error
+
+4) def showMessage(name, message="Welcome", option=""):
+  print('Hi ', name, message, option)
+
+showMessage("Aptech")
+
+#Output : Hi Aptech Welcome
+
+5) def showMessage(name="", message="Welcome", option=""):
+  print('Hi ', name, message, option)
+
+showMessage()
+
+#output : Hi Welcome
+
+#=============================================================================
+
+Positional argument :
+
+Let's see an example 
+
+1)
+def show(name, age):
+  print('Name : ', name)
+  print('Age : ', age)
+
+show('Ram', 27)
+
+#output : 
+
+Name : Ram
+Age : 27
+
+2)
+def show(name, age):
+  print('Name : ', name)
+  print('Age : ', age)
+
+show(27, 'Ram')
+
+#output : 
+
+Name : 27
+Age : Ram
+
+Here in both the example, we are getting output. 
+
+If we exchange the position of the values passed in the call, the out put always changed.
+So the position of the argument must take into consideration in order to get proper out. Hence it is called positional argument.
+
+#=====================================================================================
+
+Keyword Argument :
+
+Let's see an example 
+
+1) 
+def show(name, age):
+  print('Name : ', name)
+  print('Age : ', age)
+
+show(name='Ram', age=27)
+
+# output : 
+Name : Ram
+Age : 27 
+
+2) 
+
+def show(name, age):
+  print('Name : ', name)
+  print('Age : ', age)
+
+show(age=27, name='Ram')
+
+# output :
+Name : Ram
+Age : 27 
+
+In the above examples, the output is same if we change the position of the arguments passed in the function call.
+Because the values are passed using key (parametername). Hence the output will be same.
+
+This type of argument is called Keyword argument.
+
+#======================================================================================
+
+Arbitary argument :
+
+1) non-keyword arbitrary (*args)
+2) keyword arbitrary (**kwargv)
+
+
+example :
+
+def showOutput(*args):
+  print(args[3])
+
+showOutput(1, 2, 3, 4, 5, 6)
+
+#output : 4
+
+When we don't know the no. of arguments, we simple use arbitrary pararmeter (*args)
+
+
+def showOutput(**kwargv):
+  for key, val in kwargv.items():
+    print(f"{key} = {val}", end=' ')  
+showOutput(key1=1, key2=2, key3=3, key4=4, key5=5, key6=6)
+
+#==================================================================================
+
+function within another function :
+
+def showName(name):
+   print('Name : ', name)
+
+def showAge(age)
+  print('Age : ', age)
+
+def showOutput(name, age):
+   showName(name)
+   showAge(age)
+
+
+showOutput('Ashok', 26) 
+
+#output : 
+Name : Ashok
+Age : 26
+
+
+Here we can call a function from another function.
+
+function recursion :
+
+When a function calls itself, it called function recursion.
+
+
+def showNum(n):
+   print(n)
+   if n>0:
+    n-=1
+    showNum(n)
+
+
+showNum(10)
+
+#output : 
+
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
