@@ -1,0 +1,253 @@
+Lambda Function : 
+
+It is an anonymous function which means the function does not  have a name and return statement.
+
+
+
+Example : finding the sum of two numbers 
+
+def findSum(num1, num2):
+  return num1+num2
+
+
+print('Sum of 100 and 200 is ', findSum(100,200)
+
+
+#output : Sum of 100 and 200 is 300
+
+
+syntax : 
+
+lambda variables : expression
+
+Here variables are the function parameters which are written by a comma separation in lambda function. Expression is any type of statement.
+
+
+
+
+findSum = lambda num1, num2 :  num1+num2
+
+'''
+def findSum(num1, num2):
+  return num1+num2
+'''
+
+
+print('Sum of 100 and 200 is ', findSum(100,200)
+
+
+#output : Sum of 100 and 200 is 300
+
+Note : lambda function is very effective when we have to a single statement.
+
+
+Example 2 : Find the number is even or odd using lambda function
+
+
+def findOddEven(num):
+  return 'Even' if num%2==0 else 'Odd'
+
+'''
+  if num%2== 2:
+   return 'Even'
+  else:
+   return 'Odd'
+'''
+
+findOddEven = lambda num :  'Even' if num%2==0 else 'Odd'
+
+num = int(input('Enter a number : '))
+
+print(num, ' is ', findOddEven(num))
+
+#==================================================================
+Example 3 : find square of any number (input from keyboard)
+
+
+def findSquare(num):
+  return num*num
+
+findSquare = lambda num : num*num
+
+num = int(input('Enter a number : '))
+
+print('Square of {} is '.format(num), findSquare(num))
+
+
+#==================================================================
+Example 4 : find qube of any number (input from keyboard)
+
+def findQube(num):
+  return num*num*num
+
+findQube = lambda num : num*num*num
+
+num = int(input('Enter a number : '))
+
+print('Qube of {} is '.format(num), findQube(num))
+
+#==============================================================
+
+map(), filter(), reduce() 
+
+#===================================
+
+map() : 
+
+syntax :
+ 
+map(function, sequence)
+
+
+Let's see an example :
+
+#funcInt = lambda num : int(num)
+
+l = ['1', '2', '3', '4', '5']
+
+#l = [1, 2, 3, 4, 5]
+
+l1 = map(lambda num : int(num), l)
+
+print(l1) #[1, 2, 3, 4, 5]
+
+
+Map() function always takes two arguments. One is a function and other is a sequence/ iterator (list/tuple)
+
+map() will take each item form the sequence and pass to the function. And return value will be another sequence or iterator.
+
+Example : Take a list of int and find square of each item
+
+l = [1, 2, 3, 4, 5]
+
+l1 = map(lambda num : num*num, l)
+
+for i in l1:
+  print(i)
+
+
+#output :
+1
+2
+9
+16
+25
+
+Example : Take a list of string and append '- Aptech' to each string
+
+l = ['Python', 'MySQL', 'React', 'Angular', 'Data Science']
+
+l1 = map(lambda s : s+' - Aptech', l)
+for i in l1:
+  print(i)
+
+#ouput : 
+Python - Aptech
+MySQL - Aptech
+React - Aptech
+Angular - Aptech
+Data Science - Aptech
+
+#============================================================================
+
+filter() :
+
+
+funcEven = lambda n : n if n%2==0 else '' 
+
+l = [1, 2, 3, 4, 5, 6]
+
+l1 = filter(funcEven, l)
+
+l1 = filter(lambda n : n if n%2==0 else '' , l)
+
+for i in l1:
+  print(i)
+
+
+#output : 
+2
+4
+6
+
+#find difference between map() and filter()
+
+
+#reduce() : It is similar to map() and filter(). It always return a single value.
+
+example :
+
+def myFun(x+y):
+  return x+y
+
+l = [1, 2, 3, 4, 5, 6]
+
+l1 = reduce(lambda x,y : x+y, l)
+
+print(l1) # 21
+
+
+
+Function is of two types:
+
+1) built-in function
+2) user defined fucntion
+
+
+built-in :
+
+print()
+map()
+filter()
+reduce()
+type()
+id()
+
+user definded :
+
+myFun
+funcEven 
+
+#Difference between built-in function and user defined function.
+
+
+File handling :
+=================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
