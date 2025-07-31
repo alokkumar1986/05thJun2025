@@ -1,0 +1,231 @@
+File Handling : File handling means operating file through program. So in python there are several methods used to open, read, write, update & delete operation on file. 
+
+
+In order to work on a file, we must open it.
+
+open() : This method is used to open a file. It takes two argument. 1) File location & name 2) Mode
+
+Mode is of following types 
+
+r : read & it gives error when file is not available.
+
+a : append (write on the file & it create a file, if file is not present )
+
+w : write (write on the file & it create a file, if file is not present )
+
+x : create (It gives error, if file is already present)
+
+#===========
+
+t : text mode (default mode)
+
+b : binary mode (images)
+
+
+syntax :
+
+f = open('demo.txt', 'r') 
+
+f = open('D:/demo/demo.txt', 'r')
+
+with open('demo.txt', 'r') as f
+
+with open('D:/demo/demo.txt', 'r') as f
+
+
+
+example :
+
+f = open('demo.txt', 'r')
+# print(f.read())
+# print(f)
+for x in f:
+    print(x, end='')
+#=====================================================
+
+close() : This method is used to close an opened file.
+
+f = open('demo.txt', 'r')
+
+f.close()
+
+We need this close() method when we open a file using the following syntax
+
+f = open('demo.txt', 'r')
+
+But when we use to open file using with keyword, then we don't need to close the file. Python automatically handles it.
+
+#======================================================
+
+Example : 1 
+
+f = open('demo1.txt') 
+
+f = open('demo1.txt', 'rt')
+
+#output : No such file / directory 'demo1.txt'
+#======================================================
+example : 2
+
+f = open('28/demo1.txt')
+#===================================
+
+example : 3
+
+f = open('demo1.txt', 'a')
+
+print(f.read())
+
+#Output : Error
+
+#=====================================
+
+example : 4
+
+f = open('demo2.txt', 'a')
+
+#output : No ouput, but file (demo2.txt) is created 
+
+
+#=====================================
+
+example : 5
+
+f = open('demo2.txt', 'w')
+
+print(f.read())
+
+#Output : Error
+
+#====================================
+
+# example : 6
+
+f = open('demo2.txt', 'x')
+
+
+#output : Error
+
+Note : Wheneverr we are operation on a file, we should use error handling properly using try, catch and else.
+
+
+#======================================
+
+read() : It reads the whole content of a file.
+
+readline() : It will read line by line
+
+write() : It will write content to the file
+
+
+
+example :
+
+try : 
+ f = open('demo.txt', 'r')
+catch :
+ print('File not found')
+else :
+  f.read()
+finally : 
+  f.close()
+
+
+#Output : Welcome to File Handling
+ We are using open() method to open a file at first.
+
+example : 
+
+try : 
+ f = open('demo.txt', 'r')
+except :
+ print('File not found')
+else :
+  print(f.readline())
+  #print(f.readline())
+  #print(f.readline())
+
+#output : Welcome to File Handling
+
+
+
+example : 
+
+try : 
+ f = open('demo.txt', 'r')
+except :
+ print('File not found')
+else :
+  print(f.readline())
+  print(f.readline())
+  print(f.readline())
+
+#output : Welcome to File Handling
+
+We are using open() method to open a file at first.
+
+
+#=========================================================
+
+example :
+
+f = open('demo.txt', 'w')
+
+f.write("Write a new line to the file.")
+
+f.close()
+
+===========================================
+
+f = open('demo.txt', 'a')
+
+f.write("Write a new line to the file.")
+
+f.close()
+
+
+Note : 'w' mode will erase existing content and write new content whereas 'a' mode will append new content at the end of the existing content
+
+#------------------------------
+
+delete a file :
+
+import os 
+
+os.remove('demo2.txt')  #delete a file
+os.rmdir('28)  # delete an empty folder
+os.mkdir('28') # Create a empty folder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

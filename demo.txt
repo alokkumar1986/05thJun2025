@@ -1,0 +1,3 @@
+Welcome to File Handling.
+
+We are using open() method to open a file at first.Write a new line to the file.
