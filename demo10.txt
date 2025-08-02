@@ -1,0 +1,1 @@
+Welcome to Aptech Django Class. Django is easy to learn and implement.

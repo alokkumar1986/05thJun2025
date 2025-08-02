@@ -1,0 +1,108 @@
+#Write a program to read a file. 
+
+#Write a program to copy a file.
+
+#write a program to update the content of file. Replace Django with python. 
+
+#Write a program to rename the file.
+
+#Write a program to count number of lines, words and characters in the file.
+
+
+try :
+ f = open('demo.txt',  'r')
+except :
+ print('File not found')
+else :
+ #print(f)
+
+ lines = f.readlines() # ['Welcome to File Handling.\n', 'We are using open() method to open a file at first. Write a new line to the file.']
+
+print('Number of lines in the file', len(lines)) # 2
+
+word = 0
+char = 0
+
+for line in  lines :
+  words = line.split()  # ['Welcome', 'to', 'File', 'Handling'] #4
+		# ['We', 'are', 'using', 'open()', 'method', 'to', 'open', 'a', 'file', 'at', 'first.', 'Write', 'a', 'new', 'line', 'to', 'the', 'file.'] #18
+  word += len(words) #22 
+  for c in words :
+     char += len(c) #86
+
+print('Number of words in the file', word)
+print('Number of character in the file', char)
+
+#================================================================================
+#Write a program to rename the file.
+
+import os 
+
+if os.path.exists('demo.txt'):
+  os.rename('demo.txt', 'newdemo.txt')
+else:
+  print('File not found')
+
+#===============================================================================
+
+#write a program to update the content of file. Replace Django with Python. 
+
+ 
+f = open('demo10.txt', 'w')
+f.write('Welcome to Aptech Django Class. Django is easy to learn and implement.')
+f.close()
+
+
+f1 = open('demo10.txt', 'r')
+lines = f1.readlines()
+
+for line in lines:
+   line.replace('Django', 'Python')
+   f2 = open('demo10.txt', 'w')
+   f2.write(line)
+   f2.close()
+
+f1.close()
+
+#=======================================================================================
+#Write a program to copy a file.
+
+
+f = open('demo.txt', 'r')
+f1 = open('demo_copy.txt', 'a')
+
+for x in f:
+ f1.write(x)
+
+f.close()
+f1.close()
+
+#======================================================================
+#Write a program to read a file. 
+try:
+ f = open('demo.txt', 'r')
+except: 
+ print('file not found')
+else:
+ print(f.read())
+
+   
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

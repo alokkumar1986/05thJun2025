@@ -1,0 +1,54 @@
+OOPs : Oops stands for Object Oriented Programs.
+
+Python is an all rounder. 
+
+In programming, we can write code in different ways (programming paradims). 
+
+1) procedural programming
+2) scripting programming
+3) object oriented programming
+
+
+# Addition two number
+
+1)
+num1 = int(input('Enter first number : '))
+num2 = int(input('Enter second number : '))
+sum = num1+num2
+print('Sum is ', sum)
+
+2)
+def findSum(num1, num2):
+  print('Sum is ', num1+num2)
+
+num1 = int(input('Enter first number : '))
+num2 = int(input('Enter second number : '))
+findSum(num1, num2)
+
+3) 
+
+class NumberSum :
+  num1 = 0
+  num2 = 0
+  def __init__(self, num1, num2):
+    self.num1 = num1
+    self.num2 = num2
+  def findSum(num1, num2):
+    print('Sum is ', num1+num2)
+
+num1 = int(input('Enter first number : '))
+num2 = int(input('Enter second number : '))
+p = NumberSum(num1, num2)
+
+#============================================================
+
+Object oriented programming advantage :
+
+1) It helps in code reusability.
+2) It helps to maintain lengthy programs easily.
+3) It increases readability of the program.
+4) It helps in DRY (Don't repeat yourself).
+5) It helps in reuse and debug the program easily.
+
+
+
