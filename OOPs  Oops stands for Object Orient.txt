@@ -50,5 +50,162 @@ Object oriented programming advantage :
 4) It helps in DRY (Don't repeat yourself).
 5) It helps in reuse and debug the program easily.
 
+Python supports Oops. Everything in python oops are classes and object.
+
+class : 
+
+Class is a template for creating object. 
+
+In a class, we can write class members and class methods. All the variables that will declared inside a class are called class members. Any function that will be defined inside a class is called class method. 
+
+
+class {
+   variables
+   functions
+}
+
+syntax :
+
+class className :
+   variables
+   functions
+
+Encapsulation : Wrapping of class members and methods inside a class is called as encapsulation.
+
+Every class members are isolated from outside of the class.
+
+Object : 
+
+It is the instance of a class. that means we can not have an object without its class. 
+
+syntax : 
+
+obj = className()
+
+Example :
+
+class Vehicle :
+  make = 'Suzuki'
+  model = 'Baleno'
+
+obj = Vehicle()
+#print(make) #Error : make is not defined
+print(obj.make)  #Suzuki
+print(obj.model) # Baleno
+
+
+Here we can access class members by using obj name.
+
+objName.classMemmberName
+
+Similarly, we can access a class method using obj name.
+
+objName.classMethodName()
+
+#===================================================
+
+Example :
+
+class Vehicles :
+  make = 'Suzuki'
+  model = 'Baleno'
+
+obj = Vehicle()
+#print(make) #Error : make is not defined
+print(obj.make)  #Suzuki
+print(obj.model) # Baleno
+
+
+#Output : Error, Vehicle class is not defined.
+
+#======================================================
+
+Example :
+
+class Person:
+  name = ''
+  gender = ''
+  age  = 0
+  def __init__(self, n, g, a):
+     self.name = n
+     self.gender = g
+     self.age = a
+
+  def show(self):
+   print('Name is : ', self.name)
+   print('Gender :' , self.gender)
+   print('Age :' , self.age)
+
+
+p = Person('Ram', 'Male', 44)
+p.show()
+
+
+Note : Here __init__() is constructor. In each class, it is used to initialize class member. It is called automatically when we create an object.
+
+self : It is the reference of the current class. Using it, we can assign value to class members and access class members inside a method. It is the first argument in any function defined inside class.
+
+
+#what is difference between a constructor and class method?
+
+Constructor is a special function. It is called as __init__(). It called automatically when we create an object. It is used to initialize class members.
+
+A class implicitly contains it whether it is defined or not defined.
+
+Method is a user defined function. It is called using object name of the class by the programmer.
+
+
+#Write a program to find biggest of three number using class.
+
+
+class BigNum:
+  num1 = 0
+  num2 = 0
+  num3 = 0
+  
+  def __init__(self, p, q, r):
+   self.num1 = p
+   self.num2 = q
+   self.num3 = r
+
+ def findBiggest(self):
+   if self.num1>self.num2 and self.num1> self.num3
+      print(num1, ' is biggest')
+   elif self.num2> self.num3 :
+      print(num2, ' is biggest')
+   else :
+      print(num3, ' is biggest')
+
+
+
+o = BigNum(10, 20, 30)
+o.findBiggest()
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
