@@ -1,0 +1,52 @@
+Inheritance :
+
+
+
+great grandparents
+'
+'
+grand parents 
+'
+'
+parents
+'
+'
+you/me
+'
+'
+son/daughter
+'
+'
+niece/nephew
+
+
+A class inherit all the properties from another class(es). This process is called inheritance. 
+
+The class from which inheritance occurs is called parent / base class.
+
+The class(es) to which inheritance occur is/are called child / sub class 
+
+
+
+syntax :
+
+class Class1:
+  var1 = 100
+  var2 = "Aptech"
+
+class Class2(Class1):
+  pass
+
+
+obj = Class2()
+print(obj.var1) 
+
+
+
+
+
+
+
+
+
+

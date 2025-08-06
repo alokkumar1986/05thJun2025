@@ -1,0 +1,97 @@
+Constructor & types of constructor : 
+
+
+Constructor is a special function. It has name as __init__(). 
+
+1) When we create an object, it is automatically called.
+2) It is used to initialize class memebers.
+
+There are 3 types of constructor.
+
+1) parameterised
+2) non-parameterised
+3) default
+
+1) Parameterised Constructor : When we have a constructor with one or more parameters other than self, it is called parameterised.
+
+Example 1:
+
+class Vehicle:
+   def __init__(self, md, mk):
+      self.model= md
+      self.make = mk
+  
+
+obj = Vehicle('Beleno', 'Suzuki')
+
+Example 2:
+
+class Vehicle:
+   def __init__(self, md, mk):
+      self.model= md
+      self.make = mk
+  
+
+obj = Vehicle('Nexon')
+
+#Error
+
+2) non-parameterised constructor : When we have  a constructor without any parameter except self, it is called non-parameterised constructor.
+
+Example 1:
+
+class Vehicle:
+   def __init__(self):
+      self.model= 'Baleno'
+      self.make = 'Suzuki'
+  
+
+obj = Vehicle()
+
+
+3) Default Constructor : When we don't write a constructor inside a class, but during object creation a constructor is automatically called. It is called default constructor.
+
+
+Example :
+  
+class Vehicle:
+   pass 
+
+obj = Vehicle()
+
+
+#===============================================================================
+
+Inside a class there another special method, __str__(). It is called the string representation of a class.
+
+Example 1 :
+
+class Vehicle:
+   def __init__(self, md, mk):
+      self.model= md
+      self.make = mk
+  
+
+obj = Vehicle('Beleno', 'Suzuki')
+print(obj)
+
+Example 2 :
+
+class Vehicle:
+   def __init__(self, md, mk):
+      self.model= md
+      self.make = mk
+ 
+   def __str__(self):
+    print(f"{self.make} - {self.model}")
+  
+
+obj = Vehicle('Beleno', 'Suzuki')
+print(obj)
+
+
+Note : When we print an obj and the class has __str__(). The __str__() is called when we print the object of that class.
+
+
+
+

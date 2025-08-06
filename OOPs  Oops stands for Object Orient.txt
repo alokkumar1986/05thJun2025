@@ -180,6 +180,14 @@ class BigNum:
 
 o = BigNum(10, 20, 30)
 o.findBiggest()
+
+#================================================
+
+Inheritance:
+
+Polymorphism:
+
+
   
 
 
