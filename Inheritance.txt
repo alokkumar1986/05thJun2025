@@ -42,6 +42,290 @@ obj = Class2()
 print(obj.var1) 
 
 
+Example :
+
+
+class Vehicle:
+  def __init__(self, mk, md):
+   self.make = mk
+   self.model = md
+
+  def show(self):
+   print('Make : ', self.make)
+   print('Model : ', self.model)
+
+class Car(Vehicle) :
+  pass
+
+
+c = Car('Suzuki', 'Baleno')
+c.show()
+
+
+#Output : Make : Suzuki
+          Model : Baleno
+
+
+
+Example :
+ class Vehicle:
+  def __init__(self, mk, md):
+   self.make = mk
+   self.model = md
+
+  def show(self):
+   print('Make : ', self.make)
+   print('Model : ', self.model)
+
+ class Aeroplane(Vehicle):
+   def move(self):
+     super().show()
+     print("It flies")
+
+
+a = Aeroplane("Indigo", "XT23W")
+a.move()
+
+
+super() : It is the reference of the parent class from which the current is inherited. Using super(), we can access parent class members/ attributes/ methods inside child class.
+
+Types of inheritance :
+
+There are following types of inheritance 
+
+1) single
+2) multiple
+3) multilevel
+4) Hierarchical
+5) Hybrid
+
+Single Inheritance : When a single class is inherited from another class, it is called single inheritance.
+
+
+syntax :
+
+class A:
+  attributes
+
+class B(A):
+   attributes
+
+
+Example :
+  
+
+class Vehicle:
+  def __init__(self, md, mk):
+    self.model = md
+    self.make = mk
+  def show(self):
+    print('Make : ', self.make)
+    print('Model : ', self.model)
+
+class Car(Vehicle):
+  def move(self):
+    super().show()
+    print("Drive")
+
+a = Car('Baleno', 'Suzuki')
+a.move()   
+
+#Output : Make : Suzuki
+          Model : Baleno
+          Drive
+
+
+
+
+multiple Inheritance :  when a class is inherited from more than one class, it is called multiple inheritance.
+
+syntax :
+
+class A:
+  attributes
+
+class B:
+  attributes
+
+class C(A, B):
+  attributes
+
+
+Example 1:
+
+ class Animal: 
+   def sound(self): 
+     print('Sound')
+
+ class Dog:
+   def sound(self):
+    print('Bark')
+
+ class Shepherd(Animal, Dog):
+   pass
+
+
+ s = Shepherd()
+ s.sound()
+
+#output : Sound
+
+
+class Animal: 
+   def sound(self): 
+     print('Sound')
+
+class Dog:
+   def sound(self):
+    print('Bark')
+
+class Shepherd(Dog, Animal):
+   pass
+
+
+s = Shepherd()
+s.sound()
+
+#output : Bark
+
+
+
+multilevel Inheritance : When a class is inherited from another class and the class is further inherited from a another class. It is called multilevel inheritance.
+
+
+syntax :
+
+class A:
+  attributes
+
+class B(A):
+  attributes
+ 
+class C(B):
+  attributes
+
+
+Example :
+
+class Animal: 
+   def sound(self): 
+     print('Sound')
+
+class Dog(Animal):
+   def sound(self):
+    print('Bark')
+
+class Shepherd(Dog):
+   pass
+
+s = Shepherd()
+s.sound()
+
+
+#output : Bark
+ 
+hierarchical inheritance :  When more than class is inherited from one class, it is called heirarchical inheritance.
+ 
+  
+syntax :
+
+class A:
+ attributes
+
+class B(A):
+ attributes
+
+class C(A):
+  attributes
+
+Example :
+
+
+class Animal: 
+   def sound(self): 
+     print('Sound')
+
+class Dog(Animal):
+   def sound(self):
+    print('Bark')
+
+class Shepherd(Animal):
+   pass
+
+s = Shepherd()
+s.sound()
+
+
+#output : Sound
+
+
+hybrid inheritance : 
+
+When we have combination any two inheritance of single, multiple, multilevel and hierarchical, it is called as hybrid inheritance.
+
+
+syntax :
+
+class A:
+ attributes
+
+class B(A):
+ attributes
+
+class C:
+ attributes
+
+class D(B, C):
+ attributes
+
+
+Example :
+
+class Vehicle:
+  def move(self):
+    print("Moves")
+
+class Car(Vehicle):
+  pass
+
+class Ship:
+  def move1(self):
+   print("Sail")
+
+class Areoplane(Ship, Car):
+  def move2(self):
+   print("Fly")
+
+
+a = aeroplane()
+
+a.move()
+a.move1()
+a.move2()
+
+
+#========================================
+Polymorphism / Data abstraction
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
