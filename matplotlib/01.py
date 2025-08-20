@@ -1,4 +1,6 @@
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
+
+from matplotlb import pyplot as plt
 
 x = [0, 2, 4, 6]
 y = [1, 3, 5, 7]

@@ -1,0 +1,19 @@
+scatter plot : 
+
+For ploting scatter plot, we use scatter()
+
+x : points in the x-axis
+y : points in the y-axis
+
+
+example : 
+
+import matplotlib.pyplot as plt
+
+x = [2, 5, 6, 8, 4, 3]
+
+y = [3, 7, 2, 4, 8, 9]
+
+plt.scatter(x, y)
+plt.show()
+

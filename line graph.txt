@@ -1,0 +1,123 @@
+plot() : This is the method used to create a line graph.
+
+x : list of points in x-axis
+y : list of points in y-axis
+color : "r", "o", "#000000", "hotpink"
+
+
+example:
+plt.plot(x, y, "hotpink")
+
+
+marker : The meeting point of x-axis and y-axis is called marker.
+
+marker : "o", "*", "h", "H", "V", "^", "<", ">"
+
+
+example : 
+plt.plot(x, y, "hotpink", marker="*")
+
+
+
+markersize = ms = It is the size of the marker.
+
+10, 20, 30
+
+example : 
+plt.plot(x, y, "hotpink", marker="*", ms=20)
+
+
+linewidth : It is the width of the line joining two markers.
+linewidth = 10, 20, 30
+
+
+example : 
+plt.plot(x, y, "hotpink", marker="*", ms=20, linewidth=20)
+
+
+linestyle : It is the style of line joining two markers
+linestyle = '-', '--', '-.', ':', 'None', ' ', '', 'solid', 'dashed', 'dashdot', 'dotted' 
+
+
+example : 
+plt.plot(x, y, "hotpink", marker="*", ms=20, linewidth=20, linestyle="dotted")
+
+
+mec: marker edge color : It colours edge of the marker
+
+mfc: marker font color : It colors the marker
+
+example : 
+plt.plot(x, y, "hotpink", marker="*", ms=20, linewidth=20, linestyle="dotted", mec="blue", mfc="yellow")
+
+
+grid() : It is used to plot graph with grid.
+
+example :
+plt.grid()
+
+axis = x/y  : It presents grid along x-axis/y-axis
+color = "green"/"yellow" : it colors the grids
+linestyle = "dotted" : It is the linestyle of the grid
+linewidth= 5: It is the width of the grid
+
+#-------------------------------------------------------------
+
+title() : It is used to give title to the graph
+xlabel() : It is used for label along x-axis
+ylabel() : It is used for label along y-axis
+
+example :
+plt.title("Runs over by over /n India vs Austarlia")
+
+plt.xlabel("Overs")
+
+plt.ylabel("Runs")
+
+#---------------------------------------------------------
+
+fontdict = { 'color': 'red', 'style': 'italic', 'size': 10 } : It is used to add style to title, labels in the plot.
+
+example :
+
+plt.title("Runs over by over /n India vs Austarlia", fontdict = { 'color': 'red', 'style': 'italic', 'size': 10})
+
+plt.xlabel("Overs", fontdict = { 'color': 'red', 'style': 'italic', 'size': 10 })
+
+plt.ylabel("Runs", fontdict = { 'color': 'red', 'style': 'italic', 'size': 10 })
+
+#------------------------------------------------------------------------------------------
+
+loc : It is used in title() to place the title from left or right
+
+plt.title("Runs over by over /n India vs Austarlia", fontdict = { 'color': 'red', 'style': 'italic', 'size': 10}, loc="left")
+
+
+#--------------------------------------------------------------------------------------------
+
+
+subplot() : It is used to draw subplots in a plot
+
+example :
+
+plt.subplot(1, 2, 1)   #plt.subplot(rows, colomns, which row/column to be placed)
+
+plt.plot()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
