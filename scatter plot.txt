@@ -17,3 +17,69 @@ y = [3, 7, 2, 4, 8, 9]
 plt.scatter(x, y)
 plt.show()
 
+
+size : This is used to make marker of different size
+
+example : 
+
+import matplotlib.pyplot as plt
+
+x = [2, 5, 6, 8, 4, 3]
+
+y = [3, 7, 2, 4, 8, 9]
+
+sizes = [1, 2, 3, 4, 5, 6]
+
+plt.scatter(x, y, s=sizes)
+plt.show()
+
+
+color/c = This is used to make the marker of different colors.
+
+import matplotlib.pyplot as plt
+
+x = [2, 5, 6, 8, 4, 3]
+
+y = [3, 7, 2, 4, 8, 9]
+
+sizes = [1, 2, 3, 4, 5, 6]
+
+colors = ['red', 'blue', 'green', 'yellow', 'pink', 'black']
+
+plt.scatter(x, y, s=sizes, c=colors)
+plt.show()
+
+
+alpha : This is used to make marker opacity.
+
+import matplotlib.pyplot as plt
+
+x = [2, 5, 6, 8, 4, 3]
+
+y = [3, 7, 2, 4, 8, 9]
+
+sizes = [1, 2, 3, 4, 5, 6]
+
+colors = ['red', 'blue', 'green', 'yellow', 'pink', 'black']
+
+plt.scatter(x, y, s=sizes, c=colors, alpha=0.5)
+plt.show()
+
+cmap : color map : This is used to create color bar along side of the graph
+
+example : 
+
+
+import matplotlib.pyplot as plt
+
+x = [2, 5, 6, 8, 4, 3]
+
+y = [3, 7, 2, 4, 8, 9]
+
+sizes = [1, 2, 3, 4, 5, 6]
+
+colors = ['red', 'blue', 'green', 'yellow', 'pink', 'black']
+
+plt.scatter(x, y, s=sizes, c=colors, alpha=0.5, cmap="vertis")
+plt.colorbar()
+plt.show()

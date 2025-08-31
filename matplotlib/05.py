@@ -6,8 +6,9 @@ y = [3, 7, 2, 4, 8, 9]
 
 color= ['red', 'blue', 'green', 'yellow', 'purple', 'orange']
 
-size = [100, 200, 300, 400, 500, 600]
+sizes = [100, 200, 300, 400, 500, 600]
 
-plt.scatter(x, y, color=color, s=size, alpha=0.5)
-plt.grid()
+plt.scatter(x, y, s=sizes, c=color, alpha= 0.6)
+# plt.grid()
+plt.colorbar()
 plt.show()
